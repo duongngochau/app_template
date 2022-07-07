@@ -7,7 +7,7 @@ def checkout_source(){
         extensions: [], 
         userRemoteConfigs: [[
             credentialsId: '3373b64f-27bb-440a-88f2-843c02843a99', 
-            url: 'https://github.com/hauduongpap/2D-gane.git'
+            url: 'https://github.com/duongngochau/app_template.git'
         ]]])
 }
 
