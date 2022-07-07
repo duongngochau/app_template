@@ -1,0 +1,27 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+
+[context.production]
+  publish = "build/"
+  command = "yarn build"
+
+[context.deploy-preview]
+  publish = "build/"
+  command = "yarn build"
+
+
+[context.staging-prod]
+  publish = "build/"
+  command = "yarn build"
+
+[context.staging]
+  publish = "build/"
+  command = "yarn build"
+
+[context.development]
+  publish = "build/"
+  command = "yarn build"
+[[plugins]]
+package = "@netlify/plugin-sitemap"
